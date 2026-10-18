@@ -1,0 +1,21 @@
+% Requires \usepackage{graphicx}
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\columnwidth]{figs/cv_macro_f1.pdf}
+\caption{Training and validation macro F1-score of the best CatBoost model (depth 6, learning rate 0.05, L2 regularisation 10) over boosting iterations. Lines show the mean over the 5 cross-validation folds; shaded bands show $\pm 1$ standard deviation.}
+\label{fig:cv_f1}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\columnwidth]{figs/cv_macro_f1_zoom.pdf}
+\caption{Detail of Fig.~\ref{fig:cv_f1} from iteration 200 onward. The validation F1-score peaks at iteration 752 (0.6659 $\pm$ 0.0053).}
+\label{fig:cv_f1_zoom}
+\end{figure}
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\columnwidth]{figs/cv_logloss.pdf}
+\caption{Training and validation multi-class log loss of the best CatBoost model over the 5 cross-validation folds (mean $\pm 1$ standard deviation).}
+\label{fig:cv_logloss}
+\end{figure}
